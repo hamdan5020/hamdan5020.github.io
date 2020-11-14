@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+	<title>Information & Computer Science</title>
+<link rel="stylesheet" href="css/Styles.css">
+</head>
+
+<script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("home-images").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("home-images").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "images/ics-image1.png";
+          images[1] = "images/ics-image2.png";
+          images[2] = "images/ics-image3.png";
+      </script>
+
+</head>
+
+
+<body>
+
+ <header class = "header">
+ 		<div class "row">
+ 		<a href="#"><img  class="logo" src="images/logokfupm.gif" alt="logo"></a>	
+ 		King Fahd University of Petroleum & Minerals <strong style="font-size: 30px; padding-left: 5px;">Information & Computer Science Department</strong>
+ 		<div  class ="search">
+ 			<input style="background-color: #a4a4c4; color: white;" type="text" name="Search" placeholder="Search">
+ 			<button class="search-btn"><img class="search-pic" src="images/search.png" alt="search"></button>
+
+ 		</div>
+ 		</div>
+        
+        <nav class = "navs">
+            <ul class="nav_links">
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">About</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">People</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="pages/mypage.html">Click to Visit my Page!</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+                
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">Acadamics</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">Research</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">Prospective Students</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">Facilities</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">Industry</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+
+				<li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">News & Media</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">External Links</button>
+  						<img class = "drop" src="images/drop.png"></img>
+  							<div class="dropdown-content">
+    							<a href="#">Link 1</a>
+    							<a href="#">Link 2</a>
+    							<a href="#">Link 3</a>
+  							</div>
+					</div>
+
+                </li>
+
+                <li class="nav-elm">
+                    <div class="dropdown">
+  						<button class="dropbtn">العربية</button>
+  							<div class="dropdown-content">
+    							
+  							</div>
+					</div>
+
+                </li>
+
+
+
+
+
+            </ul>
+
+
+
+
+        </nav>
+
+    </header>
+
+    <div class="page-blue">
+    	<div class = "images-holder">
+    		<img id="home-images" src="images/ics-image3.png"/>
+    		<img onclick="displayPreviousImage()" class="prev" src="images/next.png">
+    		<img onclick="displayNextImage()" class="next" src="images/next.png">
+    	</div>
+
+    	<div class="head">Welcome To Information & Computer Science Department</div>
+
+    	<p></p>
+
+    	<div class="head">Vision & Message</div>
+
+    	<p>The Information and Comp​uter Science (ICS) D​epartment at KFUPM was establis​hed in September 1979 and it developed and evolved over the years to become one of the active departments of the University in teaching, research, and service to the university. Moreover, the ICS department is recognized thro​ughout the Gulf and many parts of the world for its excellence in education and research. The department provides 2 four-year undergraduate programs leading to Bachelor of Science in Computer Science and Bachelor of Science in Software Engineering. We also have well-established graduate programs leading to the Master of Science (MS) in Computer Science,  Master of Science (MS) in Software Engineering, Master of Science (MS) in Security & Information Assurance, and a joint program of  Doctor of Philosophy (Ph.D.) in Computer Science and Engineering. The department has about 37 full-time faculty members​ in several specialized areas of research.</p>
+    	<p></p>
+
+    	<p><strong>Breadth and Depth:</strong> The programs have a set of core courses that provide breadth in the field. Additional specialized courses and electives are chosen to provide depth in the program.</p>
+
+    	<p></p>
+
+    	<p><strong>Balance:</strong> Theoretical core courses and software/hardware are joined in theory and in practice through integrated lecture and laboratory sequences.</p>
+
+    	<p></p>
+
+    	<p><strong>Flexibility:</strong> The curriculums are flexible and provide opportunities for students to emphasize specific areas of interest through their choice of appropriate major and technical electives.​​​</p>
+
+
+    </div>
+
+    <div class= "page-white">
+    	
+    	<div class="row">
+    		<div  class="col-md-6">
+    			<div class="section">
+    				<div class="head">Recent News</div>
+
+    					<div class="row">
+    						<div class="col-md-4"><a href="#">Approval requests submission for semester 201</a>
+    						<div>25 AUG 2020</div> 
+    						</div>
+    						<div class="col-md-4"><a href="#">Saudi Aramco Cybersecurity Chair Professor position in ICS department</a>
+    						<div>28 NOV 2019</div> 
+    						</div>
+    						<div class="col-md-4"><a href="#">Agetn-Based Framework for Semantic Annotation and Personalization of Food, Health and Nutrition Information Retrieval</a>
+    						<div>16 OCT 2019</div> 
+    						</div>
+    					</div>
+    			</div>
+    		</div>
+
+    	<div class="col-md-6">
+    		<div class="section">
+    				<div class="head">Upcoming Events</div>
+    				<div>No active events found.</div>
+    			</div>
+    	</div>
+
+    	</div>
+    	
+    	   <div class="row">
+    		
+    		<div class="col-md-6">
+    			<div class="section">
+    			<div class="row">
+    				<div class="col-md-6">
+    					<div class="head"> Join our team</div>
+    					<p>The Information and Comp​uter Science (ICS) D​epartment at KFUPM was establis​hed in September 1979 and it developed and evolved over the years to become one of the active departments of the University in teaching, research, and service to the university. Moreover, the ICS department is recognized thro​ughout the Gulf and many parts of the world for its excellence in education and research. The department provides 2 four-year undergraduate programs leading to Bachelor of Science in Computer Science and Bachelor of Science in Software Engineering. <a href="#">Read More</a></p>
+    				</div>
+    				<div class="col-md-6">
+    					<div class="head">Our work</div>
+    					<p>The Information and Comp​uter Science (ICS) D​epartment at KFUPM was establis​hed in September 1979 and it developed and evolved over the years to become one of the active departments of the University in teaching, research, and service to the university. Moreover, the ICS department is recognized thro​ughout the Gulf and many parts of the world for its excellence in education and research. The department provides 2 four-year undergraduate programs leading to Bachelor of Science in Computer Science and Bachelor of Science in Software Engineering. <a href="#">Read More</a></p>
+    				</div>
+    			</div>
+    		</div>
+		</div>
+    		<div class="col-md-6">
+    			<div class="section">
+    				<div class="head">Media</div>
+    				<p>The Information and Comp​uter Science (ICS) D​epartment at KFUPM was establis​hed in September 1979 and it developed and evolved over the years to become one of the active departments of the University in teaching, research, and service to the university. Moreover, the ICS department is recognized thro​ughout the Gulf and many parts of the world for its excellence in education and research. The department provides 2 four-year undergraduate programs leading to Bachelor of Science in Computer Science and Bachelor of Science in Software Engineering. <a href="#">Read More</a></p>
+    				</div></p>
+    				</div>
+    		</div>
+
+    	</div>
+    	
+
+    </div>
+
+    <footer class="footer">
+    	<div class="page-grey">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<ul class="footer-list"> <strong>Discover KFUPM</strong> 
+    					<li><a class="footer-list" href="#">Students</a></li>
+    					<li><a class="footer-list" href="#">Faculty</a></li>
+    					<li><a class="footer-list" href="#">Staff</a></li>
+    					<li><a class="footer-list" href="#">Alumni</a></li>
+    					<li><a class="footer-list" href="#">Diploma</a></li>
+    					<li><a class="footer-list" href="#">Undergraduate</a></li>
+    					<li><a class="footer-list" href="#">Graduate</a></li>
+    					<li><a class="footer-list" href="#">Educational Services</a></li>
+    					<li><a class="footer-list" href="#">Research</a></li>
+    					<li><a class="footer-list" href="#">Student Exchange</a></li>
+    					<li><a class="footer-list" href="#">International collaboration</a></li>
+    					<li><a class="footer-list" href="#">KFUPM Offers</a></li>
+    				</ul>
+    			</div>
+
+    			<div class="col-md-4">
+    				<ul class="footer-list"> <strong>University</strong> 
+    					<li><a class="footer-list" href="#">Adminstration</a></li>
+    					<li><a class="footer-list" href="#">Admissions</a></li>
+    					<li><a class="footer-list" href="#">Jobs</a></li>
+    					<li><a class="footer-list" href="#">Terms of Use</a></li>
+    				</ul>
+    			</div>
+
+    			<div class="col-md-4">
+    				<ul class="footer-list"> <strong>Stay in Touch</strong> 
+    					<li><a class="footer-list" href="#">Facebook</a></li>
+    					<li><a class="footer-list" href="#">Twitter</a></li>
+    					<li><a class="footer-list" href="#">Instagram</a></li>
+    					<li><a class="footer-list" href="#">LinkedIn</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="footerp2">
+    			<div class="row">
+    				<div class="col-md-6">
+    					Copyrights © King Fahd University of Petroleum & Minerals
+
+King Fahd University of Petroleum & Minerals <br/><br/>Dhahran, 31261, KSA. <br/>+966 (13) 860-0000<br/>info@kfupm.edu.sa
+    				</div>
+
+    				<div class="col-md-6">
+    					<ul class="nav_links">
+    						<li><a class="footer-list" href="#">Privacy</a></li>
+    						<li><a class="footer-list" href="#">Sitemap</a></li>
+    						<li><a class="footer-list" href="#">Contact Us</a></li>
+    					</ul>
+    				</div>
+    			</div>
+
+    		</div>
+    	</div>
+    	
+    </footer>
+
+</body>
+</html>
